@@ -33,7 +33,7 @@ EchoDB 是一个使用 Go 语言实现的分布式内存数据库，采用 NoSQL
 
 - **POST /student/save**  
   **功能**：保存学生信息  
-  **请求体**：
+  **请求体(form)**：
   ```form
   {
     "id" : "123"
@@ -43,7 +43,7 @@ EchoDB 是一个使用 Go 语言实现的分布式内存数据库，采用 NoSQL
   ```
  - **GET /student/search**  
   **功能**：保存学生信息  
-  **请求体**：
+  **请求体(query)**：
   ```query
   {
     "id" : "123"
@@ -51,7 +51,7 @@ EchoDB 是一个使用 Go 语言实现的分布式内存数据库，采用 NoSQL
   ```
 - **PUT /student/update**  
   **功能**：保存学生信息  
-  **请求体**：
+  **请求体(form)**：
   ```form
   {
     "id" : "123"
@@ -61,7 +61,7 @@ EchoDB 是一个使用 Go 语言实现的分布式内存数据库，采用 NoSQL
   ```
   - **DELETE /student/delete**  
   **功能**：保存学生信息  
-  **请求体**：
+  **请求体(query)**：
   ```query
   {
     "id" : "123"
