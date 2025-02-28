@@ -1,0 +1,77 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{徐业成}
+
+\basicInfo{
+  \email{doublefisher06@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 15270081868} \textperiodcentered\ 
+  \linkedin[GitHub：https://github.com/hitxyc]{https://github.com/hitxyc}}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{哈尔滨工业大学(威海)}, 山东, 威海}{2023.09 -- 2027.06}
+\textit{在读生}\ 计算机科学与技术
+
+\section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{学生管理系统} }{2025年1月}
+\role{Golang}{个人项目}
+项目描述：使用Go语言实现一个学生信息和成绩管理系统，主要功能包括学生信息的增删改查，使用内存存储数据，不涉及数据库的持久化操作。\\
+技术栈：Gin、并发控制、反射
+\begin{itemize}
+  \item 数据结构：map, slice
+  \item 实现了增删改查, 可进行精准查询和分页查询
+  \item 支持从CSV文件中批量导入学生信息，并实现并发处理和错误处理机制。
+  \item 通过Gin框架搭建HTTP Web服务。
+\end{itemize}
+
+\datedsubsection{\textbf{EchoDB（回响录）}}{2025年2月}
+\role{Golang}{个人项目}
+\begin{onehalfspacing}
+项目简介：使用 Go 语言实现一个分布式内存数据库，数据库采用 NoSQL 类型，支持相同实例下的多实例业务。\\
+技术栈：Gin、GORM、Redis、MySQL、Raft
+\begin{itemize}
+ \item 使用 Go的goroutine 和 select语句，实现了异步任务处理和错误回调机制。
+  \item 分布式一致性保障：使用 Raft 协议在多个节点间实现数据一致性，保障系统的高可用性和容错性。
+  \item 缓存机制：结合 Redis 和懒加载策略对热点数据进行缓存预热，避免了缓存穿透和缓存击穿问题。
+\end{itemize}
+\end{onehalfspacing}
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item Golang基础：熟悉Go语言基础，并发模型，错误处理，网络编程、反射
+  \item 数据库：掌握 MySQL 和 GORM，能够根据项目要求设计并实现数据存储方案，了解Redis
+  \item API设计与网络编程：擅长使用 Gin 框架进行 RESTful API 的设计和开发
+  \item 分布式系统与一致性算法：了解Raft协议
+\end{itemize}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item GitHub: https://github.com/hitxyc
+  \item 语言: 英语 - 熟练(六级 556)
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

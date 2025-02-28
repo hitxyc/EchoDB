@@ -1,0 +1,13 @@
+
+algorithm: "Raft"        # 数据一致性算法：Raft, (因为只实现了Raft)
+thread_model: "Goroutine" # 线程模型：Goroutine或其他
+data_structure: "HashMap" # 数据结构：HashMap或其他
+eviction_policy: ""   # 删除策略：LRU、FIFO等, (但没实现，前面的领域要以后来探索了）
+
+# MySQL数据库配置
+database_config:
+  username: "root"
+  password: "xu051224"
+  host: "127.0.0.1"
+  port: 3306
+  database_name: "my_database_raft"
